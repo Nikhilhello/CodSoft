@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+      <center>
+        <h1><div class="logo">Nikhil Kuchana</div></h1>
+        <p>...hope for the best...</p>
+        <nav>
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">projects</a>
+          <a href="#resume">CV/Resume</a>
+          <a href="#contact">contact</a>
+          <span></span>
+        </nav>
+        
+        <script>
+          const navLinks = document.querySelectorAll('nav a');
+          const navBar = document.querySelector('nav');
+        
+          navLinks.forEach((link) => {
+            const linkWidth = link.offsetWidth;
+            navBar.style.width = `${linkWidth * navLinks.length}px`;
+          });
+        </script>
+        
+        <style>
+          @media (prefers-color-scheme: light) {
+            nav {
+              width: calc(100% - 20px); /* adjust width for light theme */
+            }
+          }
+        
+          @media (prefers-color-scheme: dark) {
+            nav {
+              width: calc(100% - 30px); /* adjust width for dark theme */
+            }
+          }
+        </style>
+      </center>
+    </header>
+
+
+    <!------------- About Section --------------->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://media.licdn.com/dms/image/D5603AQG0grFOqE1rSQ/profile-displayphoto-shrink_400_400/0/1709458048233?e=1726704000&v=beta&t=lyz-ZDD2TVj-UaaWw2nYq5hP2Qbv6Vr4fDoiyPuljt0" alt="Nikhil Kuchana">
+        <p>Hi, I'm Nikhil Kuchana, currently pursuing my Batchelor of technology in the stream of computer science and engineering in SR University .
+          I specialize in C,HTML, CSS, and JavaScript....., and I'm passionate about designing user-friendly interfaces. I have worked on various projects.....
+          In my free time, I enjoy exploring new web technologies and contributing to open-source projects.
+          I'm always eager to learn and take on new challenges in the world of web development.</p>
+    </section>
+
+<!-----------Skills Section ------------->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill">
+      <div class="skill-column">
+          <ul>
+              <li>HTML <div class="progress-bar" style="width: 80%;"></div></li>
+              <li>CSS <div class="progress-bar" style="width: 70%;"></div></li>
+              <li>JS <div class="progress-bar" style="width: 40%;"></div></li>
+          </ul>
+      </div>
+      <div class="skill-column">
+          <ul>
+              <li>SQL <div class="progress-bar" style="width: 85%;"></div></li>
+              <li>C Language <div class="progress-bar" style="width: 80%;"></div></li>
+              <li>python <div class="progress-bar" style="width: 70%;"></div></li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+    <!-------------- Projects Section ------------------->
+    <center>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3 style="font-family:'Courier New">SEARCH RANK FRAUD AND MALWARE DETECTION IN GOOGLE PLAY 
+             </h3>
+            <p>Identifying the fraud and malware ,detection in google play store.</p>
+            <img src="project1.jpg" alt="Project 1 Image">
+        </div>
+        <div class="project">
+            <h3 h3 style="font-family:'Courier New">VERSATILE CONVERSION</h3>
+            <p>converting image to voice,image to text,image to handwriting..</p>
+            <img src="vcpic.png" alt="Project 2 Image" height="250" width="400">
+        </div>
+        <div class="project">
+          <h3 style="font-family:'Courier New">SIGN LANGUAGE DETECTION USING CNN</h3>
+          <p>Signlanguage is a boon for the physically challenged people to express
+             their thoughts and emotion.</p>
+          <p>With the help of computer vision and neural networks we can detect
+             the signs and gives the respectivetext output.</p>
+          <img src="cnnpic.jpg" alt="Project 3 Image" height="350" width="250">
+      </div>
+    </section>
+  </center>
+    <!------------- Resume Section --------------->
+    <section id="resume">
+        <h2>CV</h2><br>
+        <a href="D:\sru\resume\resume.pdf" download> my resume</a>
+    </section>
+
+    <!------------- Contact Section ------------->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kuchananikhil2004@gmail.com">kuchananikhil2004@gmail.com</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/nikhil-k-8a146828a/">tap me :)</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/nikhilbunny0020/">insta id</a></p>
+        <p>Phone: 958XXXXX76</p>
+    </section>
+
+    <!----------- Footer -------------->
+    <footer>
+        <p>&copy; 2024 Nikhil. All rights reserved.</p>
+    </footer>
+</body>
+</html>
