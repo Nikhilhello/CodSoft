@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page of VVK fundraising</title>
+    <link rel="stylesheet" href="965.css">
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 560px; 
+            margin: auto;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="vb.jpg" alt="Left Image" style="width: 155px; height: 155px; border-radius: 100%; margin: 0 0 0px 80px; float: left; object-fit: cover;">
+        <h1>Vivekananda Vidya Kendra (VVK)</h1>
+
+    </div>
+
+    <div class="main-content">
+        <div class="section" id="about">
+            <marquee>
+                <p id="datetime"></p>
+                <script>
+                    function updateDateTime() {
+                        var currentDateTime = new Date();
+                        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                        var day = days[currentDateTime.getDay()];
+                        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        var month = months[currentDateTime.getMonth()];
+                        var date = currentDateTime.getDate();
+                        var year = currentDateTime.getFullYear();
+                        var hour = currentDateTime.getHours();
+                        var minute = currentDateTime.getMinutes();
+                        var second = currentDateTime.getSeconds();
+
+                        document.getElementById("datetime").innerHTML = day + ", " + month + " " + date + " " + year + " " + 
+                          (hour < 10 ? "0" + hour : hour) + ":" + 
+                          (minute < 10 ? "0" + minute : minute) + ":" + 
+                          (second < 10 ? "0" + second : second);
+                    }
+
+                    setInterval(updateDateTime, 1000); // update every 1 second
+                </script>
+            </marquee>
+            <u><h2>About Us</h2></u>
+            <aside><img src="head.jpeg" alt="old logo" class="right-image"></aside>
+            <b>Viveka Bharathi Society's</b>
+            <p><u>Vivekananda Vidya Kendra(VVK)</u> is a tuition center with <mark>ALL-ROUND EDUCATION</mark></p>
+            <p>Popularly known as VVK Warangal</p>
+            <p> LOCATION: Kashibugga, Warangal, Telangana</p>
+        </div>
+        
+        <div class="daily activities">
+            <u><h2>Our daily activities are as follows</h2></u>
+            <b>Morning (6AM - 8AM)</b>
+            <p>Yoga/Sports/Martial Arts/Chess, Carrom/Drawing/Handwriting/Library book reading/News.....</p>
+            <b>Evening (6PM - 9PM)</b>
+            <p>Prayer - Slokha Chanting, Story Telling</p>
+            <p>Studies - Tuition class, study hours, homework, literacy improvement....</p>
+            <b>Sunday special (5PM - 8PM)</b>
+            <p>Movie show - movies based on real-life stories, Bhajans</p>
+        </div>
+
+        <div class="section" id="success-stories">
+            <center>
+                <u><h2>Success Stories</h2></u>
+                <h3>Success Stories of 10th class students in 2024</h3>
+            </center>
+            <div class="testimonial">
+                <p>30 students of 10th class, from two government schools joined in our VVK</p>
+            </div>
+            <aside><img src="10.jpg" alt="vvk's 10th Anniversary" class="right-image"></aside>
+            <div class="testimonial">
+                <p>2 school toppers from 2 government schools in this year SSC results</p>
+            </div>
+            <div class="testimonial">
+                <p>10 out of 30 got 9 and above GPA (100% pass)</p>
+            </div>
+            <div class="testimonial">
+                <p>20 out of 30 students got free seats through entrance exams</p>
+            </div>
+            <div class="testimonial">
+                <p>Yoga practice, dance performances, sports, martial arts, Slokha chanting, bhajans, movie shows... were part of their year-long curriculum.</p>
+            </div>
+        </div>
+
+        <center>
+            <p><b>Vivekananda Vidya Kendra (VVK) is a center for local govt. school students who couldn't afford to learn Sports, Dance, Yoga along with character building education including academic tuition classes. It runs on donations from individuals in the society with a non-profit motive</b></p>
+            <section id="resume">
+                <h2>Take a look at the poster</h2><br>
+                <a href="FUND RAISING CAMPAIGN poster vvk.jpg" download> "tap me" poster!</a>
+            </section>
+        </center>
+
+        <div class="section" id="donation-progress">
+            <u><h2>Donation Progress</h2></u>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    <center>
+        <div class="section" id="donation-form">
+            <h2>Support us as an ANNUAL/MONTHLY sponsor</h2>
+            <form class="donation-form">
+                <input type="text" placeholder="Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="number" placeholder="Amount" required><br>
+                <button type="submit">Donate Now</button>
+            </form>
+        </div>
+
+        <div class="section video">
+            <h2>Watch Our Impact</h2>
+            <p> <img src="https://img.icons8.com/?size=100&id=C93WggfjREpS&format=png&color=000000" height="25"> Tap to start/stop the video</p>
+            <div class="video-container">
+                <video id="impactVideo" loop>
+                    <source src="videoplay.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </center> 
+        <div class="contact">
+            <div align="center">
+                <h2>Our social media platforms</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vbs_bharat/" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000" height="40" alt="instagram logo">
+                    </a>
+                    <a href="https://www.youtube.com/@vvkwarangal8891" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=qLVB1tIe9Ts9&format=png&color=000000" height="50" alt="youtube logo">
+                    </a>
+                    <a href="https://www.facebook.com/vvkwarangal/" target="_blank">
+                        <img src="https://img.icons8.com/?size=100&id=nhX8zsseyDoS&format=png&color=000000" height="40" alt="facebook logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <marquee>
+                <p>We want that education by which character is formed, strength of mind is increased, the intellect is expanded, and by which one can stand on one's own feet.</p>
+                <p>- Swami Vivekananda</p>
+            </marquee>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video = document.getElementById("impactVideo");
+
+            video.addEventListener("click", function() {
+                if (video.paused) {
+                    video.muted = false;
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
