@@ -1,5 +1,5 @@
 # CodSoft Internship
-~~~~~~~~~~LEVEL-1~~~~~~~~~~~~~
-Task-01-------Portfolio
-Task-02-------Landing Page
-Task-03-------Calculator
+<b>-------LEVEL-1--------<br>
+Task-01-------Portfolio { profil.html and styles.css }<br>
+Task-02-------Landing Page { landing.html and page.css }<br>
+Task-03-------Calculator { calcu.html , later.css and cal.js }
